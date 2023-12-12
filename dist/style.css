@@ -1098,3 +1098,19 @@ text-align: center;
 .date--time {
   display: block;
 }
+.mobile--view {
+  display: none;
+} 
+@media (max-width: 768px) {
+  .mobile--view {
+    display: block;
+  }
+  .mobile--view img {
+    max-width: 100%;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  #main {
+    display: none;
+  }
+}
