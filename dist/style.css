@@ -1116,7 +1116,7 @@ text-align: center;
   }
   .mobile--view--text {
     position: absolute;
-    bottom: 1rem;
+    top: 0.4em;
     line-height: 100%;
     font-size: 2em;
     left: 1em;
