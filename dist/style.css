@@ -1109,8 +1109,19 @@ text-align: center;
     max-width: 100%;
     width: 100vw;
     min-height: 100vh;
+    position: relative;
   }
   #main {
     display: none;
+  }
+  .mobile--view--text {
+    position: absolute;
+    bottom: 2rem;
+    line-height: 100%;
+    font-size: 2em;
+    left: 1em;
+    right: 1em;
+    text-align: center;
+    text-transform: capitalize;
   }
 }
