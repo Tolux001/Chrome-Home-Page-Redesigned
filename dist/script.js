@@ -13,10 +13,10 @@ let bitcoinPrice;
 btcBtn.addEventListener('click', () => {
   if(bitcoinPrice !== undefined){
     text.textContent = `${bitcoinPrice}`;
-  }else if(!bitcoinPrice){
-    text.textContent = 'Price Not Available';
+    if(!bitcoinPrice){
+      text.textContent = 'Price Not Available';  
+    }
   }
-
   fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
   .then(response => response.json())
   .then(data => {
