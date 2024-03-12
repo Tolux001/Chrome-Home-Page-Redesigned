@@ -1101,7 +1101,7 @@ text-align: center;
 .mobile--view {
   display: none;
 } 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .mobile--view {
     display: block;
   }
@@ -1124,4 +1124,4 @@ text-align: center;
     text-align: center;
     text-transform: capitalize;
   }
-}
+} */
