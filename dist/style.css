@@ -1189,11 +1189,11 @@ h3.txt-ne {
 }
 .visible--instruction {
   display: none;
+  text-transform: capitalize;
   position: relative;
   background-color: #fff;
   color: black;
-  margin-left: 5px;
-}
-.btc--btn:hover .visible--instruction {
-  display: block;
+  margin-left: .25em;
+  border-radius: 0.5rem;
+  padding: .25em .5em
 }

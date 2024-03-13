@@ -97,3 +97,10 @@ window.addEventListener('load', function() {
   }
 });
 
+
+const clickBtn = document.querySelector(".btc--btn");
+const visibleText = document.querySelector(".visible--instruction");
+
+clickBtn.addEventListener("click", () => {
+  visibleText.style.display = "inline";
+});
