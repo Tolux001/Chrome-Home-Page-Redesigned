@@ -17,12 +17,14 @@ btcBtn.addEventListener('click', () => {
       text.textContent = 'Price Not Available';  
     }
   }
-  fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+  fetch('https://api.coindesk.com/v1/bpi/currentprice/USD.json')
   .then(response => response.json())
   .then(data => {
-    bitcoinPrice = data.bpi.USD.rate;
+    console.log(`Current Bitcoin Price: ${data.bpi.USD.rate}`);
   })
-  .catch(error => console.log("Error fetching price", error));
+  .catch(error => {
+    console.error("Error fetching current Bitcoin price:", error);
+  });
 
 })
 
